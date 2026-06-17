@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reethi Stay Omadhoo | Premium Boutique Sanctuary</title>
+    <!-- Favicon SVG Integration -->
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo-wrapper" aria-label="Reethi Stay Home">
+                <img src="img/logo.svg" alt="Reethi Stay Omadhoo Logo" class="nav-logo">
+            </a>
+            
+            <!-- Mobile Drawer Wrapper with clean structural layout -->
+            <div class="nav-menu-wrapper" id="navMenuWrapper">
+                <nav class="nav-links">
+                    <a href="#about" onclick="closeMobileMenu()">The Stay</a>
+                    <a href="#rooms" onclick="closeMobileMenu()">Rooms</a>
+                    <a href="#details" onclick="closeMobileMenu()">Details</a>
+                    <a href="#safety" onclick="closeMobileMenu()">Safety & Trust</a>
+                </nav>
+                <a href="mailto:reethistayomadhoo@gmail.com" class="cta-nav mobile-cta">Reserve Stay</a>
+            </div>
+
+            <a href="mailto:reethistayomadhoo@gmail.com" class="cta-nav desktop-cta">Reserve</a>
+            
+            <button class="menu-toggle" id="menuToggleBtn" aria-label="Toggle Menu" aria-expanded="false" onclick="toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/9609713237?text=Hello%20Reethi%20Stay%20Omadhoo,%20I'd%20like%20to%20ask%20a%20question%20about%20a%20stay." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Ask a question on WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 1.764.456 3.42 1.258 4.86L2.04 21.465a.5.5 0 00.613.613l4.605-1.218A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm4.84 14.195c-.24.675-1.185 1.226-1.637 1.282-.45.057-.9.232-2.895-.552-2.548-1.002-4.148-3.57-4.276-3.74-.12-.17-1.02-1.353-1.02-2.58 0-1.227.643-1.83.87-2.06.227-.229.497-.287.663-.287.166 0 .332.001.477.007.151.006.353-.057.553.424.204.493.7 1.705.76 1.83.06.126.102.272.016.443-.085.17-.128.277-.256.425-.128.148-.268.33-.383.443-.128.127-.263.265-.113.522.15.257.665 1.094 1.428 1.77.982.87 1.81 1.141 2.067 1.269.257.129.407.108.558-.063.15-.171.643-.748.815-.99.171-.242.343-.203.578-.117.236.086 1.492.703 1.749.832.257.128.428.192.492.302.064.11.064.636-.176 1.31z" fill="currentColor"/>
+        </svg>
+        <span class="whatsapp-tooltip">Ask a Question</span>
+    </a>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-bg">
+                <img src="img/omadhoo-beach-sky.jpg" alt="Iconic Omadhoo beach coastline and horizon">
+            </div>
+            <div class="hero-content reveal">
+                <span class="tagline">ALIF DHAAL ATOLL • MALDIVES</span>
+                <h1>ESCAPE TO PARADISE UNTOUCHED.</h1>
+                <p>A boutique 2-room sanctuary in Alif Dhaal Atoll, Omadhoo designed for slow island living.</p>
+                <div class="hero-actions">
+                    <a href="#rooms" class="btn btn-primary">Explore Rooms</a>
+                    <a href="mailto:reethistayomadhoo@gmail.com" class="btn btn-secondary">Plan Your Journey</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="narrative-section container">
+            <div class="grid-2col">
+                <div class="narrative-content reveal">
+                    <span class="section-label">Boutique Minimalism</span>
+                    <h2>"Modern Concrete Meets Natural Island Textures."</h2>
+                    <p>Our private property is a thoughtfully designed architectural haven built within the regulations of the Maldives. Featuring sleek concrete lines beautifully offset by rich local wood detailing, it serves as an intimate retreat for international travelers seeking authentic Maldivian peace.</p>
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <span class="stat-num">02</span>
+                            <span class="stat-label">Exclusive Rooms</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">74</span>
+                            <span class="stat-label">NM from Malé Capital</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Private Sanctuary</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="narrative-image-wrapper reveal img-crop-4-5">
+                    <img src="img/guesthouse-exterior.jpeg" alt="Reethi Stay Guesthouse Minimalist Exterior Architectural Framing">
+                </div>
+            </div>
+        </section>
+
+        <section id="rooms" class="rooms-section bg-light">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">The Sanctuary Rooms</span>
+                    <h2>Designed Intentionally for Absolute Rest</h2>
+                </div>
+                
+                <div class="grid-2col rooms-layout">
+                    <div class="room-card reveal">
+                        <div class="room-img-box img-crop-16-9">
+                            <img src="img/triple-bedroom.jpeg" alt="Intricate slatted wood headboard wall and premium bedding setup">
+                        </div>
+                        <div class="room-info">
+                            <h3>Room 101 & 102: Designed for Rest</h3>
+                            <p>Every room at Reethi Stay is meticulously furnished using premium organic wood elements and high-grade linens. Wake up to natural light filtering through expansive glass panes, slip past your custom open-frame wardrobe, and step directly out into paradise.</p>
+                        </div>
+                    </div>
+
+                    <div class="room-card reveal">
+                        <div class="room-img-box img-crop-1-1">
+                            <img src="img/sandbank-path.jpeg" alt="Scenic soft sand pathway lined with mini palm saplings outside the windows">
+                        </div>
+                        <div class="room-info">
+                            <h3>Integrated Nature Layouts</h3>
+                            <p>Seamless spatial designs that connect your private sleeping quarters straight to the fresh island breeze and natural surrounding green flora vistas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="details" class="bathroom-section container">
+            <div class="grid-2col reverse-mobile">
+                <div class="bathroom-image-wrapper reveal img-crop-bathroom">
+                    <img src="img/guesthouse-entrance.jpeg" alt="Modern concrete architecture layout and premium entryway materials">
+                </div>
+                <div class="bathroom-content reveal">
+                    <span class="section-label">Uncompromising Standards</span>
+                    <h2>"Monolithic Marble. Flawless Cleanliness."</h2>
+                    <p>We believe the true test of a luxury homestay lies in the details. Enjoy fully private, modern en-suite bathrooms lined with premium white marble porcelain, sleek floating washbasins, and ventilated openings for refreshing, natural airflow.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="panoramic-banner">
+            <div class="banner-bg">
+                <img src="img/sandbank-shoreline.jpeg" alt="Panoramic Omadhoo sandbank perspective looking over turquoise water">
+            </div>
+            <div class="banner-overlay reveal">
+                <p class="panoramic-text">"Where the sandbanks fade into endless gradient blues."</p>
+            </div>
+        </section>
+
+        <section class="courtyard-section container">
+            <div class="grid-2col">
+                <div class="courtyard-content reveal">
+                    <span class="section-label">Slow Living</span>
+                    <h2>Your Private Maldivian Courtyard.</h2>
+                    <p>Step outside your room door straight into a secluded, soft-sand walkway lined with indigenous palms. Perfect for quiet morning coffees, listening to the ocean breeze, or reading under a canopy of green leaves.</p>
+                </div>
+                <div class="courtyard-image-wrapper reveal img-crop-4-3">
+                    <img src="img/courtyard-aerial.jpg" alt="Aerial perspective tracking the property courtyard canopy path">
+                </div>
+            </div>
+        </section>
+
+        <section id="safety" class="safety-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-label">Institutional Frameworks</span>
+                    <h2>Your Safety Is Our Absolute Priority.</h2>
+                    <p class="section-desc">Reethi Stay Omadhoo operates under full compliance with the Ministry of Tourism and Civil Aviation requirements. Led by our onsite manager Ali Adam, our property operates an actively maintained, comprehensive Disaster Management Framework.</p>
+                </div>
+
+                <div class="grid-3col reveal">
+                    <div class="safety-card">
+                        <div class="card-icon">🛡️</div>
+                        <h3>Complete Emergency Preparedness</h3>
+                        <p>Fully detailed operational protocols for fire, high winds, natural occurrences, and public safety. Dedicated 24/7 communications network, including dedicated guest mobile infrastructure distributed on check-in.</p>
+                    </div>
+                    <div class="safety-card">
+                        <div class="card-icon">🧯</div>
+                        <h3>Fire Mitigation & Response Network</h3>
+                        <p>Equipped with localized Carbon Dioxide (CO₂), Water (H₂O), and ABC Dry Powder suppression systems spanning all primary structural zones. Strict bi-annual structural safety evaluation drills conducted systematically across all staff units.</p>
+                    </div>
+                    <div class="safety-card">
+                        <div class="card-icon">🏥</div>
+                        <h3>Medical Evacuation Infrastructure</h3>
+                        <p>Direct line of communication and immediate first-responder access via the Omadhoo Island Health Centre. Fully codified trauma, cardiac, and basic first-aid operational framework linked straight to advanced medical transfer links in Malé.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-bg">
+                <img src="img/omadhoo-island-aerial.jpg" alt="Stunning wide aerial drone panorama layout of Omadhoo atoll canopy">
+            </div>
+            <div class="cta-overlay reveal">
+                <h2>Secure Your Sanctuary.</h2>
+                <p>Experience Omadhoo Island exactly how it was meant to be seen. Unhurried. Unspoiled. Unforgettable.</p>
+                <a href="mailto:reethistayomadhoo@gmail.com?subject=Boutique Speedboat Charter Inquiry" class="btn btn-primary btn-large">Book Your Private Speedboat Charter</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid-wrapper">
+            <div class="footer-brand-box">
+                <!-- Fixed relative path error for clean subfolder deployment -->
+                <img src="img/logo.svg" alt="Reethi Stay Omadhoo Footer Logo" class="footer-logo-img">
+                <p style="margin-top: 16px;">Alif Dhaal Atoll, Maldives</p>
+            </div>
+            <div class="footer-contact-box">
+                <h4>Contact Operational Matrix</h4>
+                <p>Hotline: +960 9713237</p>
+                <p>Inquiries: reethistayomadhoo@gmail.com</p>
+            </div>
+            <div class="footer-regulatory-box">
+                <h4>Regulatory Data Code</h4>
+                <p>Managed by Ali Adam | Registered Tourist Establishment. Emergency Response Plan Operational Sync Document Updated 2026.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Reethi Stay Omadhoo. All rights reserved.</p>
+        </div>
+    </footer>
+
+ <script src="app.js"></script>
+
+<div class="game-modal" id="gameModal" role="dialog" aria-hidden="true">
+    <div class="game-card">
+        <button class="game-close-btn" onclick="closeGame()" aria-label="Close Game">&times;</button>
+        
+        <div class="game-header">
+            <h3>Island Sanctuary Arcade</h3>
+            <p>Snakes aren't in the Maldives, but you can play snake right here! Use Arrow keys or the touch controls below to slither.</p>
+        </div>
+        
+        <div class="game-scoreboard">
+            <div>Score: <span id="currentScore">0</span></div>
+            <div>Best Sanctuary: <span id="highScore">0</span></div>
+        </div>
+        
+        <canvas id="snakeCanvas" width="320" height="320"></canvas>
+        
+        <div class="game-controls-mobile">
+            <button onclick="changeDirection('UP')" aria-label="Move Up">▲</button>
+            <div class="mobile-mid-row">
+                <button onclick="changeDirection('LEFT')" aria-label="Move Left">◀</button>
+                <button onclick="changeDirection('RIGHT')" aria-label="Move Right">▶</button>
+            </div>
+            <button onclick="changeDirection('DOWN')" aria-label="Move Down">▼</button>
+        </div>
+    </div>
+</div>
+
+<button class="secret-game-trigger" onclick="openGame()" aria-label="Activate Secret Game">
+    🕹️ Hidden Sanctuary Arcade
+</button>
+
+</body>
+</html>
